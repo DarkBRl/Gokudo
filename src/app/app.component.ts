@@ -41,9 +41,4 @@ export class AppComponent {
   		}
   	}
   }
-   dateOrder(){
-    return this.model.items.sort((a,b)=>{
-      return <any>new Date(b.data)-<any>new Date(a.data);
-    });
-  }
 }
