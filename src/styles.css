@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background-color:	darkblue;
+}
+ul {
+  background-color: #000c5c;
+}
+body {
+  background-color: #000c5c;
+}
