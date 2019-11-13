@@ -17,7 +17,7 @@ export class AppComponent {
   //getTodo
   getTodoItemsFalse(){
   	return this.model.items.filter(item => !item.done);
-  	
+
   }
   getTodoItemsTrue(){
   	return this.model.items.filter(item => item.done);
