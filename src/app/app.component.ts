@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Model, TodoItem } from "./model";
 @Component({
-  selector: 'todo-app',
+  selector: 'all-app',
   templateUrl: './app.component.html'
 })
 
