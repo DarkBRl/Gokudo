@@ -39,3 +39,9 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
+#leftLogo {
+  position: relative;
+  top: -5px;
+  left: 60px;
+  background-repeat: no-repeat;
+}
