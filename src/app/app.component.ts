@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { Model, TodoItem } from "./model";
+import { Model, Game } from "./model";
 @Component({
   selector: 'all-app',
   templateUrl: './app.component.html'
 })
 
 export class AppComponent {
+/*
   model = new Model();
   getName() {
   	return this.model.user;
@@ -41,4 +42,5 @@ export class AppComponent {
   		}
   	}
   }
+  */
 }

@@ -1,0 +1,24 @@
+<body>
+    <table width=100%>
+      <tbody>
+        <tr *ngFor="let game of getGames(); let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ game.name }}</td>
+            <td>{{ game.players }}</td>
+          <!--<td><input type="checkbox" [(ngModel)]="game.progress" />-->
+              <!--<div [ngSwitch]="item.done">-->
+                <!--<span *ngSwitchCase="true">Yes</span>-->
+                <!--<span *ngSwitchDefault>No</span>-->
+              <!--</div>-->
+            <!--</td>-->
+            <div [ngSwitch]="game.isFull">
+                <span *ngSwitchCase="true"> <td><button (click)="joinGame()" disabled> Join </button></td> </span>
+                <span *ngSwitchDefault> <td><button (click)="joinGame()"> Join </button></td> </span>
+            </div>
+        </tr>
+        <tr>
+          <td><button (click)="createGame()"> Create </button></td>
+        </tr>
+      </tbody>
+    </table>
+</body>
