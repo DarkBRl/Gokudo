@@ -1,25 +1,25 @@
 export class Model {
-    user;
-    items;
+    games;
     constructor() {
-        this.user = "Elmano";
-        this.items = [  new TodoItem("Preparar aula",false, "Alta", "2019-11-05"),
-                        new TodoItem("Falar com Trump",true, "Alta", "2019-09-13"),
-                        new TodoItem("Caminhar 10km",true, "Baixa", "2019-07-22"),
-                        new TodoItem("Dominar o mundo",false, "Média", "2019-12-20")]
+
+        this.games = [
+          new Game("5/7",false, "Entrem"),
+          new Game("3/4",false, "."),
+          new Game("6/6",true, "4x2"),
+          new Game("2/6",false, "zZzzzZz")
+        ]
     }
 }
-export class TodoItem {
-    action;
-    done;
-    prioridade;
-    data;
 
-    constructor(action, done,  prioridade, data) {
-        this.action = action;
-        this.done = done;
-        this.prioridade = prioridade;
-        this.data = data;
+export class Game {
+    players;
+    isFull;
+    name;
+
+    constructor(players, isFull, name) {
+        this.players = players;
+        this.isFull = isFull;
+        this.name = name;
 
     }
 }
